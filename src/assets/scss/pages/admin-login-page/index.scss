@@ -1,0 +1,57 @@
+.admin-login{
+    .form-label, a, p {
+        font-family: $libre-baskerville;
+        color: #9c8086   }
+    .container {
+        padding-top: 15rem;
+    }
+    .card {
+        background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+        
+    }
+    .card:hover {
+        background-position: right center;
+        cursor: pointer;
+    }
+     input {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom-style: groove;
+        background-image:none;
+        background-color: transparent;
+        background: transparent;
+        outline: none;
+        box-shadow:none !important;
+
+      }
+    input[type="email"], input[type="password"] {
+            background: rgba(0, 0, 0, 0);
+            outline: none;
+    }
+      
+    [placeholder]:focus::-webkit-input-placeholder {
+        transition: text-indent 0.4s 0.4s ease; 
+        text-indent: -100%;
+        opacity: 1;
+     }
+    
+    .btn {
+        background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: #9c8086;
+        text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+    }
+    .btn:hover {
+        background-position: right center;
+}
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+        background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%)
+        !important;
+}
+
+}
