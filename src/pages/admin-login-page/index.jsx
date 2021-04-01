@@ -4,13 +4,13 @@ const AdminLoginPage = () => {
         <div className="admin-login">
             <Helmet>
                 <style>
-                {'body { background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%); }'}
+                {'body { background-image: linear-gradient(to right, #84fab0 0%, #fbc2eb 51%, #84fab0 100%); }'}
                 </style>
             </Helmet>
             <div className="container">
                 <div  className=" row justify-content-center">
-                    <div  className="card border" style={{width:'20rem'}}>
-                        <div className="card-header border-0">
+                    <div  className="card border hover-overlay" style={{width:'20rem'}}>
+                        <div className="card-header border-0" style={{background:"transparent"}}>
                             <div className="text-center">
                                 <h3>LOGO</h3>
                             </div>
@@ -18,19 +18,20 @@ const AdminLoginPage = () => {
                        <div className="card-body">
                             <div class="mb-3 ">
                             <p className="form-label">Email:</p>
-                            <input 
-                            type="email" 
-                            className="form-control no-border " 
+                            <input
+                            type="email"
+                            className="form-control no-border "
                             placeholder="name@example.com">
                             </input>
 
-                            </div> 
+                            </div>
                             <div class="mb-3">
-                            <label for="exampleFormControlInput1" className="form-label">Password:</label>
+                            <label className="form-label">Password:</label>
                             <input 
                             type="password" 
                             className="form-control" 
-                            id="exampleFormControlInput1">
+                            placeholder="********"
+                            >
                             </input>
                             </div>
                             <p className="text-right"><a className=" text-muted" href="#">forgot password?</a></p>
